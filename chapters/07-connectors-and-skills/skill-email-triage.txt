@@ -1,0 +1,26 @@
+# Skill: Email Triage
+# From chapter 7, Skills: The Other Upgrade. Step 4 changed to match chapter 5: see BOOK-FIXES.md.
+
+When the user asks you to process their email or check their inbox:
+
+1. READ RULES: Look for a file called email-rules.txt on the
+   user's Desktop. If it exists, use those rules. If not, ask
+   the user to define URGENT, NEEDS REPLY, FYI, and ARCHIVE
+   categories before proceeding.
+
+2. PROCESS: Read every unread email. Categorize each one using
+   the rules. For "Needs Reply" emails, draft a response that
+   matches the sender's tone and references the thread context.
+
+3. OUTPUT: Save a summary as inbox-summary-[today's date].txt
+   on the Desktop with sections: URGENT (sender, subject, why),
+   NEEDS REPLY (sender, subject, draft), FYI (sender, subject),
+   ARCHIVE (count only).
+
+4. ARCHIVE: Do not archive on the first runs. Apply the label
+   "Claude-Archive-Review" to emails in the ARCHIVE category (in a
+   mail client without labels, list them under ARCHIVE CANDIDATES).
+   Move them out of the inbox only after a week or two of correct
+   runs. Ask for approval before archiving.
+
+Never send any email without explicit user approval.

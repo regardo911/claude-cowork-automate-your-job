@@ -1,0 +1,4 @@
+Invoice Number,Client,Invoice Date,Amount,Status
+1001,Acme Test Co,2025-03-03,1200.00,Paid
+1002,Sample Client LLC,2025-03-10,850.00,Sent
+1003,Example Studio,2025-03-17,2400.00,Sent

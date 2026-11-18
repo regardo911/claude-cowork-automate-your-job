@@ -1,0 +1,158 @@
+# cowork-templates.txt: 34 of the book's prompts, chapters 4 to 12.
+# Fill the [brackets] before you paste. Each prompt matches the copy in its chapter folder.
+# Add your own notes under a prompt (run time, data it needs, what breaks it).
+
+=== Chapter 4: Folder audit, look first ===
+Open Finder and go to [your folder path]. Audit every file in the folder. Create a document called "folder-audit.txt" on my Desktop with the following information for each file: the file name, the file type, the file size, and a one-sentence description of the content based on the file name (do not open the files yet, just describe what the name suggests). After the audit, suggest a folder structure with 4-6 subfolders based on the file types and apparent purposes you found.
+
+=== Chapter 4: Folder audit, move the files ===
+Now organize the files. Create the following subfolders inside [your folder path]: [list your folder names]. Move each file into the appropriate subfolder based on the audit. Do not rename any files. Leave files you are unsure about in a "Needs-Review" subfolder. When finished, update the folder-audit.txt file on my Desktop with the final file locations.
+
+=== Chapter 4: Folder audit, summary document ===
+Open the folder-audit.txt file on my Desktop. Based on the audit, create a new document called "folder-summary.md" on my Desktop with the following sections: an overview of the folder (total files, total size, file type breakdown), a list of the most important files with brief descriptions, any issues found (duplicate files, files with no extensions, files that might be outdated), and a recommended action list (files to delete, files to rename, files that need attention).
+
+=== Chapter 4: Folder audit, read inside the files ===
+Open each PDF and Word document in [your folder path]. For each file, read the first page and update the folder-audit.txt with a 2-3 sentence description of the actual content, not just the file name.
+
+=== Chapter 4: Audit-first pattern (Appendix A) ===
+1. OBSERVE: "[Look at/Read] [data source]. Report what you find.
+   Save the report as [filename] on my Desktop."
+2. REVIEW: [You read the report and decide what to do]
+3. ACT: "Using the report, [specific instructions for what to do].
+   Do not [specific things to avoid]."
+4. VERIFY: "Save a summary of what you did as [filename].
+   Include any issues or items that need my attention."
+
+=== Chapter 5: Morning email triage (schedule weekdays 6:00am) ===
+Read the file email-rules.txt on my Desktop. Then open Safari and go to mail.google.com (or open Mail/Outlook if you use those). Read all unread emails in my inbox. For each email, categorize it using the rules in email-rules.txt. For emails in the "Needs My Reply" category, draft a reply based on the email thread context. Save a summary document to my Desktop called "inbox-summary-[today's date].txt" with the following sections: URGENT (with sender, subject, and why it is urgent), NEEDS MY REPLY (with sender, subject, and the draft reply I should review), FYI (sender and subject only), and ARCHIVE (count only, do not list individual emails). Do not archive anything on this first run. Instead, for every email you put in the ARCHIVE category, apply the Gmail label "Claude-Archive-Review" (in a mail client without labels, list those emails by sender and subject at the bottom of the summary under "ARCHIVE CANDIDATES"). I will review them and tell you when to start archiving automatically.
+
+=== Chapter 5: Send approved replies, one approval each ===
+Open Gmail. For each draft reply in the inbox summary, find the email thread and send the reply. Ask me for approval before each send.
+
+=== Chapter 5: Threads waiting on a reply ===
+Open my email client. Find any threads where I sent a message more than 3 days ago and have not received a reply. List them in a document called "follow-ups-needed.txt" on my Desktop with the recipient, subject, date I sent my last message, and how many days since my message.
+
+=== Chapter 5: Job applications, supervised (you click Submit) ===
+Open Safari and go to [job board URL]. Search for [your job title] in [your city or "remote"]. For each job listing in the results: open the listing, read the job description, check if my resume matches at least 70% of the requirements (my resume is saved at [path to resume file on your Desktop]). If it matches, fill in the application, and if there is a cover letter field, write a cover letter that references 2-3 specific requirements from the job description and explains how my experience matches. Then STOP and show me the completed application so I can review it and click Submit myself. After I approve and submit, move to the next listing. Stop after 20 applications or when you reach the end of the search results, whichever comes first.
+
+=== Chapter 5: Job tracker, create the file ===
+Create a spreadsheet on my Desktop called job-applications.csv with columns for Company, Position, Date Applied, Job Board, and Status.
+
+=== Chapter 6: Spreadsheet audit ===
+Read the file test-data.csv on my Desktop. Audit the data quality. Report the following: total number of rows, total number of columns with their names, data type of each column (dates, numbers, text), any data quality issues you find (duplicates, missing values, inconsistent formats, outliers, invalid entries). Do not fix anything yet. Just report what you find. Save the audit to a file called "data-audit.txt" on my Desktop.
+
+=== Chapter 6: Spreadsheet clean ===
+Using the audit results, clean the data in test-data.csv. Apply these rules: 1) Standardize all dates to YYYY-MM-DD format. 2) Remove exact duplicate rows but keep near-duplicates and mark them with "REVIEW" in the Notes column. 3) Replace "see invoice" entries in Amount with 0 and add "MISSING AMOUNT" to Notes. 4) Standardize category names to Title Case. 5) Flag rows with empty dates by adding "MISSING DATE" to Notes. Save the cleaned data as "test-data-cleaned.csv" on my Desktop. Also save a cleaning log as "cleaning-log.txt" that records every change made, with the original value and the new value, so I can audit your work.
+
+=== Chapter 6: Spreadsheet verify (put your count in [number]) ===
+Compare test-data.csv and test-data-cleaned.csv. Report: the row count before and after, the sum of the Amount column before and after, and every row where the Amount value changed. Confirm that the only intentional Amount changes are the [number] "see invoice" rows set to 0. Flag anything else.
+
+=== Chapter 6: Spreadsheet report ===
+Read test-data-cleaned.csv. Generate a report called "analysis-report.md" on my Desktop with the following sections: 1) Executive Summary (3-4 sentences for someone who will not read the full report). 2) Key Metrics (total transactions, total amount, average transaction, largest transaction, most common category, most common vendor). 3) Trends (monthly spending breakdown, top 5 categories by total spend, top 5 vendors by total spend). 4) Anomalies (any unusual patterns, the flagged items from the cleaning process, the outliers). 5) Recommendations (3-5 specific actions based on what the data shows). Write the entire report in plain English. No jargon. No statistical terms. A business owner with no data background should be able to read this and understand it.
+
+=== Chapter 6: Weekly data check ===
+Read the latest CSV in my "Weekly Reports" folder. Compare it to last week's data (the second-newest file in the same folder). Generate a week-over-week comparison report showing: total revenue change (dollar and percentage), top 3 categories that grew, top 3 categories that shrank, any new vendors or categories that did not exist last week, and any anomalies (transactions over $5,000, duplicate entries, missing data). Save the report as "weekly-report-[today's date].md" on my Desktop.
+
+=== Chapter 6: Survey results ===
+Read survey-results.csv on my Desktop. Calculate the average rating. Then read every free-text comment and categorize each one into one of these buckets: Praise, Feature Request, Complaint, or Neutral. For complaints, identify the top 3 recurring themes. Generate a survey report with: overall satisfaction score, response breakdown by category, the top 3 complaint themes with 2-3 example quotes from actual responses, and 3 recommended actions based on the findings. Save as survey-report.md on my Desktop.
+
+=== Chapter 6: Bank to invoice reconciliation ===
+Read bank-transactions.csv and invoices.xlsx from my Desktop. Match transactions to invoices by comparing the Amount column in both files (allow a $0.50 difference for rounding). For matched pairs, create a new file called 'reconciliation.csv' with columns for Invoice Date, Client Name, Amount Due, Bank Date, Bank Description, and Status (mark as 'Matched'). List any unmatched bank transactions and unmatched invoices in separate sections at the bottom.
+
+=== Chapter 7: Load a skill file ===
+Read the file skill-data-analyst.txt on my Desktop and follow those instructions for this conversation.
+
+=== Chapter 7: List connectors and Extensions ===
+List the connectors, Extensions, and MCP servers you currently have access to and briefly describe what each one can do.
+
+=== Chapter 8: Afternoon data check (schedule 2:00pm) ===
+Read the file weekly-sales.csv in my Google Drive folder. Compare it to yesterday's snapshot (saved as weekly-sales-snapshot.csv on my Desktop). Report any changes: new rows added, rows deleted, values that changed (show old vs new value). If no changes were found, just say "No changes since yesterday." Save the comparison as "data-check-[today's date].txt" on my Desktop. Then replace the snapshot file with the current version so tomorrow's comparison uses today's data.
+
+=== Chapter 8: End-of-day report (schedule 5:30pm) ===
+Compile an end-of-day report and save it as "eod-report-[today's date].md" on my Desktop. Include: 1) Summary of today's email activity (how many processed, how many sent, any urgent items still pending). 2) Calendar summary for tomorrow (list meetings with times). 3) Action items from today that are still open (check the inbox summary and data check from earlier today). 4) Any files Claude created or modified today (list with brief description).
+
+=== Chapter 8: Task log line (end of every scheduled prompt) ===
+Append a line to the file task-log.txt on my Desktop with the format: [date] [time] [task name] [status: SUCCESS/FAIL] [summary].
+
+=== Chapter 9: Workflow pattern ===
+Complete the following steps in order. After each step, save intermediate results so I can review your progress if I check the conversation.
+
+Step 1: [first task - produces output A]
+Step 2: Using the results from Step 1, [second task - produces output B]
+Step 3: Using the results from Steps 1 and 2, [third task - produces output C]
+Step 4: Compile outputs A, B, and C into [final deliverable]
+
+=== Chapter 9: Monday meeting prep ===
+Complete the following workflow. Save intermediate results to files on my Desktop as you go.
+
+STEP 1 - Calendar Review:
+Read my calendar for this week (Monday through Friday). List every meeting with the attendee names, date, time, and subject. Save this as "weekly-calendar.txt" on my Desktop.
+
+STEP 2 - Client File Check:
+For each meeting that involves a client (any meeting where the subject or attendee name matches one of these client names: [list your active clients]), open my Google Drive and find that client's folder. Check the 3 most recently modified files in each client folder. Note the file names, last modified dates, and whether anything was modified in the past 7 days. Save this as "client-files-status.txt" on my Desktop.
+
+STEP 3 - Email Check:
+Read my inbox for any emails from the clients identified in Step 2, received in the past 7 days. For each email, note the sender, subject, date, and a 1-sentence summary. Save this as "client-emails.txt" on my Desktop.
+
+STEP 4 - Weekly Prep Summary:
+Compile the results from Steps 1-3 into a single document called "weekly-prep-[today's date].md" on my Desktop. Format it as:
+- Section 1: This Week's Meetings (sorted by date/time)
+- Section 2: Client Activity Summary (for each client: recent file changes, recent emails, any open items)
+- Section 3: Action Items (anything that needs my attention before the meetings)
+- Section 4: Prep Notes (suggested talking points for each client meeting based on their recent activity)
+
+When all steps are complete, give me a brief summary in the chat.
+
+=== Chapter 9: Wednesday overdue invoices ===
+Complete the following workflow. Save intermediate results as you go.
+
+STEP 1 - Invoice Check:
+Read the file "invoices.csv" in my Google Drive Accounting folder. Identify any invoices with a Status of "Sent" where the Invoice Date is more than 14 days ago. These are overdue. List them with the client name, invoice number, amount, and days overdue. Save as "overdue-invoices.txt" on my Desktop.
+
+STEP 2 - Payment History Check:
+For each overdue invoice, check my bank transactions file (bank-transactions.csv on my Desktop) for any payments matching the invoice amount in the past 30 days. If a matching payment exists, mark the invoice as "Possibly Paid - Verify" and include the transaction date. Save updated list as "overdue-invoices-checked.txt."
+
+STEP 3 - Draft Follow-Ups:
+For each invoice that is still overdue after Step 2 (not marked as possibly paid), draft a follow-up email. Tone: friendly but firm. Include the invoice number, amount, and original send date. For invoices 14-30 days overdue, use a gentle reminder. For invoices 30+ days overdue, use a firmer tone mentioning that payment is significantly past due. Save all drafts as "follow-up-drafts.txt" on my Desktop.
+
+STEP 4 - Summary:
+Create "invoice-follow-up-[today's date].md" with: total overdue amount, number of overdue invoices, list of follow-ups to send, and any invoices that may have been paid (need manual verification).
+
+=== Chapter 9: Friday hours, budgets, deadlines ===
+Complete the following workflow.
+
+STEP 1 - Hours Compilation:
+Read "time-tracking.csv" in my Google Drive. Sum hours by client for this week (Monday through today). Save as "weekly-hours.txt."
+
+STEP 2 - Budget Check:
+Read "client-budgets.csv" in my Google Drive. For each client in Step 1, compare hours used this week against remaining budget. Flag any client where this week's hours bring total hours above 80% of the budget cap. Save as "budget-status.txt."
+
+STEP 3 - Deliverables Check:
+Read my email for any messages this week containing the words "deliverable," "deadline," "due," or "submit." List them with client, subject, and date. Cross-reference with the calendar to identify any upcoming deadlines next week. Save as "deliverables-status.txt."
+
+STEP 4 - Weekly Summary:
+Compile into "weekly-client-report-[today's date].md" with: hours by client (with % of budget used), any budget warnings, upcoming deliverables and deadlines, and a list of next-week priorities based on deadlines and budget status.
+
+=== Chapter 10: Job search analysis ===
+Read job-applications.csv on my Desktop. Calculate: total applications by job board, callback rate by job board, callback rate by job title, and average days between application and callback. Identify which job board and which job title have the highest callback rates. Recommend where to focus next week's batch. Save the analysis as "job-search-analysis.md" on my Desktop.
+
+=== Chapter 11: Safe Mode prefix (paste before any new workflow) ===
+SAFETY RULES FOR THIS TASK: 1) Do not send, submit, or post anything to any external recipient. Save all drafts and outputs as files on my Desktop for my review. 2) Skip any folder named "No-AI" or "Private." Do not open, read, or list files in those folders. Skip emails from senders listed in the SKIP section of email-rules.txt. 3) Before performing any action that deletes, moves, or modifies existing files, or before clicking Send/Submit on any form, state what you are about to do in the chat and wait for my approval. Now proceed with the following task:
+
+=== Chapter 11: No-AI access test ===
+List every folder on my Desktop. For each folder, list the files inside it. If you encounter a folder called "No-AI" or "Private," do NOT list its contents. Instead, write "SKIPPED - restricted folder" and move on. Save the results as "access-test.txt" on my Desktop.
+
+=== Chapter 12: Competitive price monitor ===
+Complete the following steps. STEP 1: Open Safari and go to [competitor URL 1]. Find the price of [product name]. Save to "price-check.csv" on my Desktop with columns: Date, Competitor, Product, Price. STEP 2: Repeat for [competitor URL 2] and [competitor URL 3]. STEP 3: Compare today's prices to yesterday's "price-snapshot.csv" on my Desktop. Report any changes (price increases or decreases) with the dollar and percentage difference. STEP 4: Save today's data as the new "price-snapshot.csv" for tomorrow's comparison. Save the comparison as "price-alert-[today's date].txt."
+
+=== Chapter 12: Tenant email triage ===
+Read tenant-rules.txt on my Desktop. Open my email. Read all unread emails from tenants (any sender matching a name in tenant-rules.txt). Categorize each email: MAINTENANCE REQUEST (include urgency: low/medium/high based on keywords), RENT QUESTION, LEASE QUESTION, GENERAL. For maintenance requests, draft a response with an estimated timeline based on urgency. Save summary as "tenant-summary-[today's date].txt."
+
+=== Chapter 12: Social media drafts ===
+STEP 1: Search the web for the top 5 trending articles in [your industry] published in the past 7 days. Save the titles, URLs, and a 1-sentence summary of each as "trending-content.txt" on my Desktop. STEP 2: For each article, draft a social media post (under 280 characters for Twitter, under 500 characters for LinkedIn) that references the article's key insight and ties it to [your business or expertise]. STEP 3: Save all drafts as "social-drafts-[today's date].txt" with the format: Platform, Draft Text, Source URL.
+
+=== Chapter 12: Progress tracker ===
+STEP 1: Open Safari and go to [Google Classroom / shared spreadsheet / project board URL]. Read all submissions or updates from the past 7 days. STEP 2: For each person, note: name, items submitted, items overdue, last activity date. STEP 3: Save as "progress-report-[today's date].md" with sections: On Track (submitted everything), Needs Attention (1-2 items overdue), At Risk (3+ items overdue or no activity in 7+ days). Include a count for each category.
+
+=== Chapter 12: Invoices from your hours ===
+STEP 1: Read "time-tracking.csv" in my Google Drive. Sum hours by client for the past 2 weeks. STEP 2: Read "client-rates.csv" from my Desktop (columns: Client Name, Hourly Rate). Match the Client column in time-tracking.csv to Client Name in client-rates.csv. Calculate the invoice amount for each client (hours x rate). STEP 3: For each client, create a file called "invoice-[client name]-[today's date].txt" on my Desktop with: my business name and address, client name, invoice date, hours worked, hourly rate, total amount, and payment terms (Net 30). STEP 4: Save a summary as "invoice-batch-[today's date].md" listing all invoices generated with amounts.

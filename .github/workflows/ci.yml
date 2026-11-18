@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  files:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Check the files
+        run: |
+          python -m unittest discover -s tests -v 2>&1 | tee test.log
+          test "${PIPESTATUS[0]}" -eq 0
+          # a discover that finds nothing still exits 0, so insist on a real count
+          grep -Eq '^Ran [1-9][0-9]* tests?' test.log

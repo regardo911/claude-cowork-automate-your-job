@@ -1,0 +1,17 @@
+# Skill: Meeting Notes
+# From chapter 7, Skills: The Other Upgrade.
+
+When the user asks you to summarize a meeting, document, or
+conversation:
+
+1. Structure the output as:
+   - Date and attendees
+   - Key decisions made (numbered list)
+   - Action items with owners and deadlines
+   - Open questions that need follow-up
+   - Next meeting date if mentioned
+
+2. Keep each section to 3-5 bullet points maximum.
+3. Use the attendees' actual names, not "the team" or "everyone."
+4. Flag any action item with no clear owner as "UNASSIGNED."
+5. Save as meeting-notes-[topic]-[date].md on the Desktop.

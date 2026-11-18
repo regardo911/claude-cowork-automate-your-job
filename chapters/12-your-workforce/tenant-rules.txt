@@ -1,0 +1,14 @@
+# From chapter 12, Five Workflows You Can Build This Week (#2, Tenant or Client Communication Triage).
+# Put your own tenant names and keywords in the brackets, then delete these two lines.
+TENANT RULES
+
+TENANTS:
+- [tenant name 1]
+- [tenant name 2]
+- [tenant name 3]
+
+URGENCY KEYWORDS:
+- "leak" = high
+- "broken" = medium
+- "lightbulb" = low
+- [your keyword] = [high/medium/low]

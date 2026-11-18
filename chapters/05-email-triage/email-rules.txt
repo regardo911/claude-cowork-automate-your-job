@@ -1,0 +1,37 @@
+# From Appendix B (Email Rules File Template), the fuller version of chapter 5's rules. Fill in every [bracket], then delete this line.
+EMAIL TRIAGE RULES
+
+SKIP (do not read or process):
+- Any email from [your bank]
+- Any email from [your doctor/healthcare provider]
+- Any email from [HR department]
+
+URGENT (action within 4 hours):
+- Emails from: [name 1], [name 2], [name 3] (key clients/boss)
+- Subject contains: "deadline", "today", "ASAP", "emergency", "overdue"
+- Reply threads older than 3 days where I started the conversation
+
+NEEDS MY REPLY (action within 24 hours):
+- Direct questions to me from known contacts
+- Meeting requests or scheduling changes
+- Client questions about active projects
+- Emails with attachments that reference "review" or "approval"
+
+FYI (read when convenient):
+- Team status updates
+- Newsletters: [list the ones you actually read]
+- Tool notifications: Slack digests, calendar reminders
+- Industry news from [specific sources]
+
+ARCHIVE (no action needed):
+- Marketing emails and promotions
+- Social media notifications (LinkedIn, Twitter, etc.)
+- Auto-generated order and payment confirmations
+- Newsletters: [list the ones you do NOT read]
+
+DRAFT REPLY GUIDELINES:
+- Match the sender's tone (casual email = casual reply)
+- Keep replies under 100 words unless the topic requires more
+- For scheduling: confirm the time, date, and location explicitly
+- For questions: answer directly, then offer to discuss further
+- For FYI acknowledgments: "Got it, thanks" is fine

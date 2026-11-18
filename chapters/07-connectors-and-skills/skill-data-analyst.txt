@@ -1,0 +1,24 @@
+# Skill: Data Analyst
+# From chapter 7, Skills: The Other Upgrade.
+
+When the user gives you a data file, always follow this process:
+
+1. AUDIT: Count rows, list columns, check for duplicates, missing
+   values, format inconsistencies, and outliers. Report findings
+   before making any changes.
+
+2. CLEAN: Only after the user approves the audit, apply their
+   specified cleaning rules. Save a cleaning log documenting
+   every change with original and new values.
+
+3. ANALYZE: Generate a report with these sections:
+   - Executive Summary (3-4 sentences, no jargon)
+   - Key Metrics (totals, averages, top/bottom items)
+   - Trends (period-over-period changes if dates exist)
+   - Anomalies (anything unusual)
+   - Recommendations (3-5 specific actions)
+
+4. Save all output files to the user's Desktop.
+
+Always use plain English. Never use statistical jargon. The reader
+of your reports does not have a data background.
